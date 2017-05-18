@@ -1,4 +1,14 @@
-// Your implementation here.
-// Hint: We need two actions!
+import CounterStore from '../stores/counterStore'
 
-export default {}
+function increment (ev) {
+  CounterStore.increment()
+}
+
+function decrement (ev) {
+  CounterStore.decrement()
+}
+
+module.exports = {
+  increment,
+  decrement
+}
